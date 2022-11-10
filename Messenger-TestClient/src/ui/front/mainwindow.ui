@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>446</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Segoe UI Variable Small Semibol</family>
+    <pointsize>10</pointsize>
+    <stylestrategy>PreferAntialias</stylestrategy>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Messenger</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../images.qrc">
+    <normaloff>:/app/ui/images/AppIcon.ico</normaloff>:/app/ui/images/AppIcon.ico</iconset>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>64</width>
+    <height>64</height>
+   </size>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>500</width>
+     <height>400</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI Variable Small Semibol</family>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+     <stylestrategy>PreferAntialias</stylestrategy>
+    </font>
+   </property>
+   <widget class="QMenu" name="menuAccount">
+    <property name="font">
+     <font>
+      <family>Segoe UI Variable Small Semibol</family>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+      <stylestrategy>PreferAntialias</stylestrategy>
+     </font>
+    </property>
+    <property name="tearOffEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="title">
+     <string>Account</string>
+    </property>
+    <addaction name="accountInfo"/>
+    <addaction name="separator"/>
+    <addaction name="accountLeave"/>
+   </widget>
+   <widget class="QMenu" name="menuGroup">
+    <property name="font">
+     <font>
+      <family>Segoe UI Variable Small Semibol</family>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+      <stylestrategy>PreferAntialias</stylestrategy>
+     </font>
+    </property>
+    <property name="title">
+     <string>Group</string>
+    </property>
+    <addaction name="groupCreate"/>
+    <addaction name="separator"/>
+    <addaction name="groupJoin"/>
+    <addaction name="groupLeave"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="font">
+     <font>
+      <family>Segoe UI Variable Small Semibol</family>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+      <stylestrategy>PreferAntialias</stylestrategy>
+     </font>
+    </property>
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <widget class="QMenu" name="menuChange_theme">
+     <property name="title">
+      <string>Change theme</string>
+     </property>
+     <addaction name="darkTheme"/>
+     <addaction name="whiteTheme"/>
+    </widget>
+    <addaction name="showGroupList"/>
+    <addaction name="showMemberList"/>
+    <addaction name="separator"/>
+    <addaction name="menuChange_theme"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="aboutAuthor"/>
+    <addaction name="aboutQt"/>
+   </widget>
+   <addaction name="menuAccount"/>
+   <addaction name="menuGroup"/>
+   <addaction name="menuSettings"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="connectState">
+   <property name="font">
+    <font>
+     <family>Segoe UI Variable Small Semibol</family>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+     <stylestrategy>PreferAntialias</stylestrategy>
+    </font>
+   </property>
+  </widget>
+  <action name="groupCreate">
+   <property name="icon">
+    <iconset resource="../../images.qrc">
+     <normaloff>:/dialgproup/ui/images/group_layouts.ico</normaloff>:/dialgproup/ui/images/group_layouts.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Create group</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI Variable Small Semibol</family>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="groupJoin">
+   <property name="icon">
+    <iconset resource="../../images.qrc">
+     <normaloff>:/dialgproup/ui/images/contacts.ico</normaloff>:/dialgproup/ui/images/contacts.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Join group</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI Variable Small Semibol</family>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="groupLeave">
+   <property name="icon">
+    <iconset theme="Tecn" resource="../../images.qrc">
+     <normaloff>:/dialgproup/ui/images/exit.ico</normaloff>:/dialgproup/ui/images/exit.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Leave group</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI Variable Small Semibol</family>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="accountChange">
+   <property name="icon">
+    <iconset resource="../../images.qrc">
+     <normaloff>:/app/ui/images/settings.ico</normaloff>:/app/ui/images/settings.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Change info</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI Variable Small Semibol</family>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="accountLeave">
+   <property name="icon">
+    <iconset resource="../../images.qrc">
+     <normaloff>:/dialgproup/ui/images/exit.ico</normaloff>:/dialgproup/ui/images/exit.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Leave</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI Variable Small Semibol</family>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="accountInfo">
+   <property name="icon">
+    <iconset resource="../../images.qrc">
+     <normaloff>:/app/ui/images/contacts1.ico</normaloff>:/app/ui/images/contacts1.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Info</string>
+   </property>
+  </action>
+  <action name="showGroupList">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Show group list</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI Variable Small Semibol</family>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="showMemberList">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Show members list</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI Variable Small Semibol</family>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="darkTheme">
+   <property name="text">
+    <string>Dark</string>
+   </property>
+  </action>
+  <action name="whiteTheme">
+   <property name="text">
+    <string>White</string>
+   </property>
+  </action>
+  <action name="aboutAuthor">
+   <property name="icon">
+    <iconset resource="../../images.qrc">
+     <normaloff>:/messagemenu/ui/images/contactsPH.ico</normaloff>:/messagemenu/ui/images/contactsPH.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Author</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI Variable Text Semibold</family>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="aboutQt">
+   <property name="icon">
+    <iconset resource="../../images.qrc">
+     <normaloff>:/app/ui/images/qt.ico</normaloff>:/app/ui/images/qt.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Qt</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI Variable Text Semibold</family>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../../images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

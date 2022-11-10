@@ -1,0 +1,29 @@
+<RCC>
+  <qresource prefix="/start">
+    <file>ui/images/blind.ico</file>
+    <file>ui/images/eye.ico</file>
+  </qresource>
+  <qresource prefix="/app">
+    <file>ui/images/refresh.ico</file>
+    <file>ui/images/AppIcon.ico</file>
+    <file>ui/images/settings.ico</file>
+    <file>ui/images/close.ico</file>
+    <file>ui/images/contacts1.ico</file>
+    <file>ui/images/no-profilepng.png</file>
+    <file>ui/images/qt.ico</file>
+  </qresource>
+  <qresource prefix="/messagemenu">
+    <file>ui/images/contactsPH.ico</file>
+    <file>ui/images/send.ico</file>
+    <file>ui/images/image.ico</file>
+  </qresource>
+  <qresource prefix="/dialgproup">
+    <file>ui/images/group_layouts.ico</file>
+    <file>ui/images/contacts.ico</file>
+    <file>ui/images/exit.ico</file>
+  </qresource>
+  <qresource prefix="/tray">
+    <file>ui/images/chat_message.ico</file>
+    <file>ui/images/group_message.ico</file>
+  </qresource>
+</RCC>
